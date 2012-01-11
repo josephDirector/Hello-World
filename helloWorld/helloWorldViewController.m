@@ -36,14 +36,23 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    UIButton *myHelloButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    myHelloButton.frame = CGRectMake(100, 350, 120, 50);
+    [myHelloButton setTitle:@"Click me" forState:UIControlStateNormal];
+    [myHelloButton addTarget:self action:@selector(clickHello:) forControlEvents:UIControlStateNormal];
+    [self.view addSubview:myHelloButton];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void) clickHello:(id)sender{
+    UIAlertView *helloAlertView = [[UIAlertView alloc]initWithTitle:@"Hello...World" message:@"Click ok!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+    [helloAlertView show];
+    
 }
 
 @end

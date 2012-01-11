@@ -15,7 +15,6 @@
 		DD22E9C414300E6A003138FA /* helloWorldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD22E9C314300E6A003138FA /* helloWorldAppDelegate.m */; };
 		DD22E9C714300E6A003138FA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD22E9C514300E6A003138FA /* MainWindow.xib */; };
 		DD22E9CA14300E6A003138FA /* helloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD22E9C914300E6A003138FA /* helloWorldViewController.m */; };
-		DD22E9CD14300E6A003138FA /* helloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD22E9CB14300E6A003138FA /* helloWorldViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		DD22E9C614300E6A003138FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		DD22E9C814300E6A003138FA /* helloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helloWorldViewController.h; sourceTree = "<group>"; };
 		DD22E9C914300E6A003138FA /* helloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloWorldViewController.m; sourceTree = "<group>"; };
-		DD22E9CC14300E6A003138FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/helloWorldViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 				DD22E9C514300E6A003138FA /* MainWindow.xib */,
 				DD22E9C814300E6A003138FA /* helloWorldViewController.h */,
 				DD22E9C914300E6A003138FA /* helloWorldViewController.m */,
-				DD22E9CB14300E6A003138FA /* helloWorldViewController.xib */,
 				DD22E9BA14300E6A003138FA /* Supporting Files */,
 			);
 			path = helloWorld;
@@ -150,7 +147,6 @@
 			files = (
 				DD22E9BE14300E6A003138FA /* InfoPlist.strings in Resources */,
 				DD22E9C714300E6A003138FA /* MainWindow.xib in Resources */,
-				DD22E9CD14300E6A003138FA /* helloWorldViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,14 +180,6 @@
 				DD22E9C614300E6A003138FA /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		DD22E9CB14300E6A003138FA /* helloWorldViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD22E9CC14300E6A003138FA /* en */,
-			);
-			name = helloWorldViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -276,6 +264,7 @@
 				DD22E9D214300E6A003138FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
